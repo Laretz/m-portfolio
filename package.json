@@ -4,11 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "build:static": "next build && next export",
-    "deploy": "next build && next export"
+    "export": "next build"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.10",

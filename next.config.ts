@@ -3,14 +3,15 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   output: 'export',
+  trailingSlash: true,
+  skipTrailingSlashRedirect: true,
 
   images: {
     unoptimized: true,
   },
 
-  // 👇 Ajuste para o GitHub Pages
-  //basePath: isProd ? '/my-portfolio' : '',
-  //assetPrefix: isProd ? '/my-portfolio/' : '',
+  basePath: isProd ? '/m-portfolio' : '',
+  assetPrefix: isProd ? '/m-portfolio' : '',
 };
 
 module.exports = nextConfig;
