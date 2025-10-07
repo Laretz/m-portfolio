@@ -14,14 +14,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LZ - Desenvolvedor Full Stack",
-  description: "Portfólio de Renato Ramon - Desenvolvedor Full Stack especializado em Node.js, TypeScript, APIs escaláveis e otimização de performance.",
-  keywords: ["desenvolvedor", "full stack", "node.js", "typescript", "api", "postgresql", "next.js"],
+  title: "Renato - Desenvolvedor Full Stack",
+  description:
+    "Portfólio de Renato Ramon - Desenvolvedor Full Stack especializado em Node.js, TypeScript, APIs escaláveis e otimização de performance.",
+  keywords: [
+    "desenvolvedor",
+    "full stack",
+    "node.js",
+    "typescript",
+    "api",
+    "postgresql",
+    "next.js",
+  ],
   authors: [{ name: "Renato Ramon" }],
   creator: "Renato Ramon",
   openGraph: {
     title: "LZ - Desenvolvedor Full Stack",
-    description: "Portfólio de Renato Ramon - Desenvolvedor Full Stack especializado em Node.js, TypeScript, APIs escaláveis e otimização de performance.",
+    description:
+      "Portfólio de Renato Ramon - Desenvolvedor Full Stack especializado em Node.js, TypeScript, APIs escaláveis e otimização de performance.",
     type: "website",
     locale: "pt_BR",
   },
