@@ -43,8 +43,8 @@ const HeroSection = () => (
   >
     <Avatar className="h-40 w-40 md:h-64 md:w-64 ring-4 ring-primary/20">
       <AvatarImage
-        src="https://1drv.ms/i/c/94cd7427fd1faffa/ES-Mg87sI2dCi0RS6zDa4lQBJa4VJ_1RoLKQFZn9N10-JA?e=gVSYF0"
-        alt="Sua foto"
+        src="profile.jpg"
+        alt="Foto de perfil"
       />
       <AvatarFallback>LZ</AvatarFallback>
     </Avatar>
@@ -56,17 +56,14 @@ const HeroSection = () => (
         Desenvolvimento voltado à performance, qualidade e boas práticas
       </p>
       <p className="mt-4 max-w-xl text-lg text-muted-foreground leading-relaxed">
-        Olá! Sou Renato Ramon, desenvolvedor com foco em back-end e experiência
-        em Node.js, TypeScript e bancos de dados. Tenho 28 anos e sou movido por
-        desafios técnicos e aprendizado contínuo. Gosto de entender o
-        funcionamento interno das ferramentas que utilizo e busco sempre aplicar
-        boas práticas, testes e código limpo. Embora minha especialidade seja o
-        desenvolvimento de APIs, também possuo vivência com Next.js e React, o
-        que me permite atuar em soluções completas.
+        Olá! Sou Renato Ramon, tenho 28 anos e atuo como desenvolvedor com foco em back-end, 
+        utilizando principalmente Node.js e TypeScript. No último ano, trabalhei com NestJS no desenvolvimento e evolução de APIs, 
+        aproveitando sua arquitetura modular, injeção de dependência e suporte a validações e testes para construir aplicações 
+        organizadas, escaláveis e de fácil manutenção.  Apesar do foco em back-end, também possuo experiência com 
+        React e Next.js, atuando em alguns momentos como fullstack na construção de interfaces e integração com APIs.
       </p>
       <div className="mt-6 flex flex-wrap gap-2 justify-center md:justify-start">
-        <Badge variant="secondary">Node.js</Badge>
-        <Badge variant="secondary">TypeScript</Badge>
+        <Badge variant="secondary">Node.js, NestJS & TypeScript</Badge>
         <Badge variant="secondary">PostgreSQL</Badge>
         <Badge variant="secondary">Prisma ORM</Badge>
         <Badge variant="secondary">Next.js</Badge>
@@ -93,11 +90,10 @@ const TechnicalSkillsSection = () => {
       icon: <Server className="h-6 w-6" />,
       title: "Backend & APIs",
       skills: [
-        "Node.js & Fastify",
-        "Express.js",
+        "NestJS & Node.js",
+        "Arquitetura Modular",
         "RESTful APIs",
         "JWT Authentication",
-        "Bcrypt & Segurança",
         "Validação com Zod",
       ],
     },
@@ -107,8 +103,8 @@ const TechnicalSkillsSection = () => {
       skills: [
         "PostgreSQL",
         "MySQL",
-        "Prisma ORM",
         "MongoDB",
+        "Prisma ORM",
         "Migrations & Seeds",
         "Query Optimization",
       ],
@@ -131,21 +127,21 @@ const TechnicalSkillsSection = () => {
       skills: [
         "Git & GitHub",
         "Docker & Docker Compose",
-        "CI/CD Pipelines",
+        "CI/CD (GitHub Actions)",  
+        "Deploy (Render)",
+        "Ambientes (dev/staging/prod)",
         "ESLint",
-        "Metodologias Ágeis",
       ],
     },
     {
       icon: <TestTube className="h-6 w-6" />,
       title: "Testes & Qualidade",
       skills: [
-        "Vitest",
+        "Jest",
         "Testes Unitários",
         "Testes de Integração",
-        "TDD/BDD",
-        "Supertest",
-        "Code Coverage",
+        "E2E(Supertest)",
+        "TDD (conceitos)",
       ],
     },
   ];
@@ -196,7 +192,7 @@ const ProjectsSection = () => {
     {
       title: "Sistema de Grade de Horários Acadêmicos",
       description:
-        "Sistema completo para gestão acadêmica com algoritmo genético para otimização automática de horários. Inclui gestão de turmas, salas, professores, disciplinas e alocações inteligentes.",
+        "Sistema para apoio à alocação semestral de turmas da UFRN, desenvolvido para reduzir conflitos e retrabalhos no processo de definição de horários. Permite o gerenciamento de disciplinas, professores, espaços físicos e horários, facilitando a organização acadêmica e a tomada de decisão da coordenação do curso. Inclui um módulo inicial de sugestão automática baseado em algoritmo genético, que analisa combinações viáveis e propõe distribuições de horário por turma.",
       image:
         "https://placehold.co/600x400/212121/FFFFFF?text=Sistema+Acadêmico",
       technologies: [
@@ -231,7 +227,7 @@ const ProjectsSection = () => {
     {
       title: "BrainCode - Rede Social para Desenvolvedores",
       description:
-        "Rede social inovadora para desenvolvedores organizarem, compartilharem e descobrirem conhecimento técnico de forma estruturada e colaborativa.",
+        "Plataforma para desenvolvedores registrarem e compartilharem aprendizados técnicos, com organização em pastas e possibilidade de reutilização de soluções, como componentes e trechos de código criados ao longo de projetos.",
       image: "https://placehold.co/600x400/212121/FFFFFF?text=BrainCode+App",
       technologies: [
         "React Native",
@@ -275,7 +271,7 @@ const ProjectsSection = () => {
     {
       title: "NatalSportsCourts API",
       description:
-        "API RESTful para gerenciamento de quadras esportivas públicas com sistema de agendamentos e controle de disponibilidade.",
+        "API RESTful para gerenciamento de quadras esportivas públicas, com cadastro de quadras, controle de disponibilidade e agendamentos. O sistema permite que usuários compartilhem informações sobre o uso das quadras em tempo real, ajudando a identificar se há jogos acontecendo e qual esporte está sendo praticado.",
       image: "https://placehold.co/600x400/212121/FFFFFF?text=Sports+API",
       technologies: [
         "ASP.NET Core",
@@ -306,8 +302,8 @@ const ProjectsSection = () => {
         Projetos em Destaque
       </h2>
       <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-        Seleção de projetos que demonstram minhas habilidades técnicas e
-        capacidade de resolver problemas complexos
+        Seleção de projetos pessoais que demonstram minhas habilidades técnicas e
+        capacidade de resolver problemas
       </p>
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
         {projects.map((project, index) => (
@@ -392,19 +388,21 @@ const ExperienceSection = () => (
         <CardContent className="p-6">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
             <h3 className="text-xl font-semibold">
-              Desenvolvedor Backend — Seu Bone
+              Desenvolvedor Backend — SeuBoné
             </h3>
-            <Badge variant="secondary">2025 - Presente</Badge>
+            <Badge variant="secondary">2025 ~ 2026 - Presente</Badge>
           </div>
           <p className="text-muted-foreground mb-4">
-            Desenvolvimento de sistemas acadêmicos complexos com foco em
-            otimização de algoritmos e arquiteturas escaláveis.
+           Atuação no desenvolvimento e manutenção dos sistemas internos da empresa, com foco em back-end, 
+           modelagem de dados e construção de APIs.
           </p>
           <ul className="text-sm text-muted-foreground space-y-1">
-            <li>• Criação e manutenção de APIs RESTful</li>
-            <li>• Integração com bancos de dados</li>
-            <li>• Colaboração em equipe utilizando metodologias ágeis</li>
-            <li>• Manutenção e implementação de novas funcionalidades</li>
+            <li>• Desenvolvimento de APIs REST e definição de rotas</li>
+            <li>• Modelagem de dados e criação de estruturas no banco de dados</li>
+            <li>• Implementação e manutenção de regras de negócio no back-end</li>
+            <li>• Integração entre sistemas internos</li>
+            <li>• Construção de queries e endpoints para geração de métricas de negócio </li>
+            <li>• Evolução contínua das aplicações com foco em organização e escalabilidad </li>
           </ul>
         </CardContent>
       </Card>
@@ -415,12 +413,12 @@ const ExperienceSection = () => (
             <h3 className="text-xl font-semibold">
               Tecnólogo em Análise e Desenvolvimento de Sistemas — UFRN
             </h3>
-            <Badge variant="outline">2022 - 2025</Badge>
+             <Badge variant="secondary">2022 ~ 2026 </Badge>
           </div>
           <p className="text-muted-foreground">
-            Formação sólida em desenvolvimento de software, com foco em
-            estruturas de dados, algoritmos e engenharia de software. Estou em
-            fase de conclusão do curso, com previsão de formatura em 2025.2.
+            Formação em Análise e Desenvolvimento de Sistemas pela UFRN, com base em estruturas de dados, algoritmos e 
+            engenharia de software. Ao longo do curso, desenvolvi projetos voltados à construção de APIs e sistemas completos. 
+            Atualmente em fase final, com previsão de conclusão em 2026.1.
           </p>
         </CardContent>
       </Card>
@@ -507,8 +505,8 @@ export default function PortfolioPage() {
       <main className="min-h-screen">
         <HeroSection />
         <TechnicalSkillsSection />
-        <ProjectsSection />
         <ExperienceSection />
+        <ProjectsSection />
         <ContactSection />
       </main>
       <ThemeToggle />
